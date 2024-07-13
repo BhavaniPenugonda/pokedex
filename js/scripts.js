@@ -6,11 +6,15 @@ let pokemonList = [
   {name :'Caterpie', height:0.3, type : ['Bug']}
 ];
 
-//conditional loop that prints the Pokemon list and tells which is the big pokemon//
+//prints the pokemon lists and tells which is big pokemon //
 for(let i=0;i<pokemonList.length;i++) {
-   document.write('<p>'+  pokemonList[[i]].name  + '(height: ' +  pokemonList[i].height +  ')');
-   if(pokemonList[i].height>1){
-    document.write('-Wow,that\'s big');
-   }
+  let bigPokemon = '-Wow,that\'s big!'
+  let pokemon =  pokemonList[i].name  + '(height: ' +  pokemonList[i].height +  ')';
+  if(pokemonList[i].height>1){
+   document.write('<p>' + pokemon + bigPokemon +'</p>');
+  }
+  else {
+    document.write('<p>' + pokemon + '</p>');
+  }
 
 }
