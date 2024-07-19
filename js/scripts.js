@@ -1,5 +1,6 @@
 
-//pokemon list in array //
+// pokemon list in array //
+
 let pokemonList = [
   {name :'Pikachu', height:0.4, type : ['electric']},
   {name :'Pidgeot', height:1.5, type : ['Flying','Normal']},
@@ -7,7 +8,7 @@ let pokemonList = [
 ];
 
 //prints the pokemon lists and tells which is big pokemon //
-for(let i=0;i<pokemonList.length;i++) {
+/* for(let i=0;i<pokemonList.length;i++) {
   let bigPokemon = '-Wow,that\'s big!'
   let pokemon =  pokemonList[i].name  + '(height: ' +  pokemonList[i].height +  ')';
   if(pokemonList[i].height>1){
@@ -17,4 +18,11 @@ for(let i=0;i<pokemonList.length;i++) {
     document.write('<p>' + pokemon + '</p>');
   }
 
-}
+}*/
+
+pokemonList.forEach(function(pokemon) {
+  document.write(pokemon.name   +  '(height: ' +  pokemon.height +  ')');
+  if(pokemon.height>1){
+     document.write('-Wow,that\'s big!');
+  }
+});
