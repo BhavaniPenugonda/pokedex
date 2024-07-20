@@ -1,5 +1,5 @@
 
-let pokemonRepository= (function(){
+const pokemonRepository= (function(){
 
 
   let pokemonList = [
@@ -25,7 +25,7 @@ let pokemonRepository= (function(){
 })();
 
 
-pokemonList.forEach(function(pokemon) {
+pokemonRepository.getAll().forEach(function(pokemon) {
   document.write('<p>' +pokemon.name  +  '(height: ' +  pokemon.height +  ')');
   if(pokemon.height>1){
     document.write('-Wow,that\'s big!');
