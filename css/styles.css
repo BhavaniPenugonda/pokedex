@@ -14,6 +14,7 @@ body {
   margin: 20px;
 }
 
+/*  Applied color,background color,paddind ,transition colors to pokemon buttons */
 .button-class {
 
   background-color: var(--button-backgroundcolor);
