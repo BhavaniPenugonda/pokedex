@@ -28,7 +28,4 @@ body {
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
-  background-color:var(--button-textcolor);
-  color: black;
-  border: 2px solid var(--button-backgroundcolor);
 }
