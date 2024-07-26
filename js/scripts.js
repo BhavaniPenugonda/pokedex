@@ -28,7 +28,12 @@ const pokemonRepository= (function(){
 
   }
 
-   f
+  function showDetails(pokemon){
+    loadDetails(pokemon).then(function () {
+    console.log(pokemon.name);
+  });
+}
+
 
 function loadList() {
     return fetch(apiUrl).then(function(response){
@@ -59,16 +64,13 @@ function loadDetails(item) {
  });
  }
 
-  function showDetails(pokemon){
-    loadDetails(pokemon).then(function () {
-    console.log(pokemon.name);
-  });
-}
+  
   
   return{
     add:add,
     getAll:getAll,
     addListItem: addListItem,
+    showDetails:showDetails,
     loadList:loadList,
     loadDetails:loadDetails
     
