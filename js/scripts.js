@@ -2,11 +2,8 @@
 const pokemonRepository= (function(){
 
 /* pokemon Array list  is created and assigned to a variable */
-  let pokemonList = [
-    {name :'Pikachu', height:0.4, type : ['electric']},
-    {name :'Pidgeot', height:1.5, type : ['Flying','Normal']},
-    {name :'Caterpie', height:0.3, type : ['Bug']}
-  ];
+  let pokemonList = [];
+  let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
 
 /*Get all pokemons*/
   function getAll(){
@@ -32,6 +29,9 @@ const pokemonRepository= (function(){
   }
 
 
+function loadList() {
+    return fetch(apiUrl);
+} 
 
   function showDetails(pokemon){
     console.log(pokemon.name);
