@@ -28,6 +28,7 @@ const pokemonRepository= (function(){
 
   }
 
+   f
 
 function loadList() {
     return fetch(apiUrl).then(function(response){
@@ -45,18 +46,35 @@ add(pokemon);
   })
 }
 
+function loadDetails(item) {
+  let url = item.detailsUrl;
+  return fetch(url).then(function (response) {
+    return response.json();
+  }).then(function (details){
+    item.imageUrl = details.sprites.front_default;
+    item.height = details.height;
+    item.types = details.types;
+  }).catch(function (e){
+    console.error(e);
+ });
+ }
+
   function showDetails(pokemon){
+    loadDetails(pokemon).then(function () {
     console.log(pokemon.name);
-  }
+  });
+}
   
   return{
     add:add,
     getAll:getAll,
     addListItem: addListItem,
-    loadList:loadList
+    loadList:loadList,
+    loadDetails:loadDetails
     
   };
 })();
+
 pokemonRepository.loadList().then(function(){
 /* loop  that prints all pokemons with eventlistener   */
 pokemonRepository.getAll().forEach(function(pokemon) {
