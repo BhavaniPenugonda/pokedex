@@ -32,7 +32,14 @@ const pokemonRepository= (function(){
     loadDetails(pokemon).then(function () {
     console.log(pokemon.name);
   });
+
 }
+
+function showModal() {
+  let modalcontainer = document.queryselector('#modal-container');
+  modalcontainer.classList.add('is-visible');
+}
+
 
 
 function loadList() {
