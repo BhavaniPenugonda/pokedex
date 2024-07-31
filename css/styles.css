@@ -1,12 +1,25 @@
 :root{
---button-backgroundcolor : #2029218e; /* Green */
---button-textcolor:white;
---modal-backgroundcolor: #00000080;
+  --button-backgroundcolor : #2029218e; /* Green */
+  --button-textcolor:white;
+  --modal-backgroundcolor: #00000080;
 }
 
 * {
   margin:0;
   padding:0;
+}
+
+h1{
+  font-size:26px ;
+}
+
+p{
+  font-size: 16px ;
+}
+
+.Title {
+  
+  font-size: 30px;
 }
 
 body {
@@ -32,7 +45,7 @@ body {
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
-
+  
 }
 
 
@@ -45,13 +58,13 @@ body {
   width:100%;
   height:100%;
   background:var(--modal-backgroundcolor);
-
+  
   /* to show it above other content */
   z-index: 999; 
-
+  
   /* to allow scrolling if the screen is not high enough*/
   overflow: auto; 
-
+  
   /* this is used to center the modal */
   display: grid;
   text-align: center;
@@ -85,4 +98,23 @@ body {
 
 #modal-container.is-visible {
   display: block;
+}
+
+
+@media all and (max-width:500px) {
+  .pokemon-info {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 768px) {
+  .pokemon-info {
+    font-size: 24px;
+  }
+  h1 {
+    font-size: 25px;
+  }
 }
