@@ -1,5 +1,5 @@
 :root{
---button-backgroundcolor : #4caf50; /* Green */
+--button-backgroundcolor : #2029218e; /* Green */
 --button-textcolor:white;
 --modal-backgroundcolor: #00000080;
 }
@@ -14,10 +14,11 @@ body {
   font-size: 15px;
   margin: 20px;
 }
-
+.pokemon-list{
+  list-style-type: none;
+}
 /*  Applied color,background color,paddind ,transition colors to pokemon buttons */
 .button-class {
-
   background-color: var(--button-backgroundcolor);
   border: none;
   color: var(--button-textcolor);
@@ -29,6 +30,7 @@ body {
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
+
 }
 
 
