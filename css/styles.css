@@ -13,10 +13,12 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   margin: 20px;
+  
 }
 .pokemon-list{
   list-style-type: none;
 }
+
 /*  Applied color,background color,paddind ,transition colors to pokemon buttons */
 .button-class {
   background-color: var(--button-backgroundcolor);
