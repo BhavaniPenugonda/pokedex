@@ -44,7 +44,7 @@ const pokemonRepository= (function(){
     modalContainer.innerHTML='';
     let modal=document.createElement('div');
     modal.classList.add('modal');
-
+    
     //Adds the new modal content
     let closeButtonElement = document.createElement('button');
     closeButtonElement.classList.add('modal-close');
@@ -71,7 +71,7 @@ const pokemonRepository= (function(){
   function hideModal(){
     modalContainer.classList.remove('is-visible');
   }
-
+  
   window.addEventListener('keydown',(e)=>{
     if(e.key==='Escape' && modalContainer.classList.contains('is-visable')) {
       hideModal();
