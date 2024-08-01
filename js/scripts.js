@@ -74,7 +74,7 @@ const pokemonRepository= (function(){
   }
   
   window.addEventListener('keydown',(e)=>{
-    if(e.key==='Escape' && modalContainer.classList.contains('is-visable')) {
+    if(e.key==='Escape' && modalContainer.classList.contains('is-visible')) {
       hideModal();
     }
   });
