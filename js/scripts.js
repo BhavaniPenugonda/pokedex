@@ -4,6 +4,7 @@ const pokemonRepository= (function(){
   /* pokemon Array list  is created and assigned to a variable */
   let pokemonList = [];
   let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
+  let modalContainer = document.querySelector('#modal-container');
   
   /*Get all pokemons*/
   function getAll(){
@@ -38,7 +39,7 @@ const pokemonRepository= (function(){
     
   }
   
-  let modalContainer = document.querySelector('#modal-container');
+  
   function showModal(title,text,img) {
     
     modalContainer.innerHTML='';
