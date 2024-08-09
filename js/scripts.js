@@ -20,6 +20,9 @@ const pokemonRepository= (function(){
     let listpokemon = document.createElement('li');
     listpokemon.classList.add('list-group-item');
     let button = document.createElement('button');
+    button.classList.add('btn','btn-primary');
+    button.setAttribute('data-toggle','modal');
+    button.setAttribute('data-target','#pokemonModal');
     button.addEventListener('click', function() {
       showDetails(pokemon);
     });
