@@ -18,6 +18,7 @@ const pokemonRepository= (function(){
   function addListItem(pokemon){
     let pokemonList = document.querySelector('.pokemon-list');
     let listpokemon = document.createElement('li');
+    listpokemon.classList.add('list-group-item');
     let button = document.createElement('button');
     button.addEventListener('click', function() {
       showDetails(pokemon);
