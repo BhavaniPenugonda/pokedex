@@ -1,5 +1,5 @@
 
-const pokemonRepository= (function(){
+let pokemonRepository= (function(){
   
   /* pokemon Array list  is created and assigned to a variable */
   let pokemonList = [];
