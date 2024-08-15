@@ -16,17 +16,17 @@ body {
 
 @media (max-width: 768px) {
   h1 {
-      font-size: 16px;
+    font-size: 16px;
   }
-
+  
   .navbar-brand {
-      font-size: 20px;
+    font-size: 20px;
   }
-
+  
   .pokemon-list .list-group-item {
-      padding: 10px;
-      flex-direction: column;
-      text-align: center;
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
   }
 }
 

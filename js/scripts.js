@@ -23,12 +23,12 @@ let pokemonRepository= (function(){
     button.classList.add('btn','btn-primary');
     button.setAttribute('data-toggle','modal');
     button.setAttribute('data-target','#pokemonModal');
-
+    
     
     button.addEventListener('click', function() {
       showDetails(pokemon);
     });
-
+    
     listpokemon.appendChild(button);
     pokemonList.appendChild(listpokemon);
     
